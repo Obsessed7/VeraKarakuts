@@ -120,3 +120,13 @@ video.frame-media_left {
 .soundbutton.paused {
 	opacity: .25;
 }
+
+.btn {
+	font-family: inherit;
+    font-size: 50px;
+    line-height: 1.1;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
