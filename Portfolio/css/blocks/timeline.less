@@ -30,10 +30,18 @@
     &--left {
         text-align: right;
         padding-right: 3.2rem;
+
+        @media @mobile {
+            padding-right: 1.5rem;
+        }
     }
 
     &--right {
         padding-left: 3.2rem;
+
+        @media @mobile {
+            padding-left: 1.5rem;
+        }
     }
 }
 
@@ -44,6 +52,10 @@
     color: black;
     text-transform: uppercase;
     font-weight: 700;
+
+    @media @mobile {
+        font-size: 1rem;
+    }
 }
 
 .timeline__item {
@@ -61,6 +73,10 @@
     text-decoration: underline;
     font-size: 0.94rem;
     color: @black;
+
+    @media @mobile {
+        font-size: 0.7rem;
+    }
 }
 
 .timeline__subtitle {
@@ -68,6 +84,10 @@
     font-size: 1.06rem;
     color: @black;
     font-weight: 700;
+    
+    @media @mobile {
+        font-size: 0.7rem;
+    }
 }
 
 .timeline__position {
@@ -75,6 +95,10 @@
     font-size: .94rem;
     color: @black;
     font-style: italic;
+
+    @media @mobile {
+        font-size: 0.7rem;
+    }
 }
 
 .timeline__text {
@@ -84,5 +108,10 @@
     color: gray;
     font-weight: 300;
     text-align: justify;
+
+    @media @mobile {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
 
 }

@@ -3,6 +3,10 @@
 .footer {
     padding: 1rem 0;
     background-color: @black;
+
+    @media @mobile {
+        padding: 0.5rem 0;
+    }
 }
 
 .footer__inner {
@@ -16,12 +20,20 @@
     
     color: #BBBBCC;
     font-size: 0.94rem;
+
+    @media @mobile {
+        font-size: 0.6rem;
+    }
 }
 
 .footer__nav {
     display: flex;
     align-items: center;
     font-size: 0.94rem;
+
+    @media @mobile {
+        font-size: 0.6rem;
+    }
 }
 
 .footer__nav-link {

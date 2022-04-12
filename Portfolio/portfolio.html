@@ -30,13 +30,17 @@
                 </div>
             </div>
 
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <a class="nav__link" href="#work">work</a>
                 <a class="nav__link" href="#aboutme">about me</a>
                 <a class="nav__link" href="#blog">blog</a>
                 <a class="nav__link" href="#contact">contact</a>
                 <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me" >hire me</a>
             </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <img class="burger__icon" src="../Portfolio/icons/burger.png" alt="">
+            </button>
         </div>
     </div>
 </header>
@@ -756,12 +760,12 @@
                         <input class="input" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
                     </div>
 
-                    <div class="form__group">
+                    <div class="form__group1">
                         <label class="label" for="input-email"style="margin-left: 1rem">Request</label>
                         <textarea class="textarea" name="input-text" id="input-text" placeholder="Type your request" ></textarea>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn--last" type="sumbit">SEND</button>
+                        <button class="btn__last" type="sumbit">SEND</button>
                     </div>
                 </form>
             </div>

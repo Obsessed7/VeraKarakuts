@@ -1,24 +1,66 @@
 // main: ../style.less
 
 .about {
-    margin: 8.4rem 0; 
+    margin: 8.4rem 0;
+    
+    @media @mobile {
+        margin-top: 1rem;
+    }
 }
 
 .about__inner{
     display: flex;
     min-width: 1090px;
+
+    @media @tablet {
+        
+        min-width: 665px;
+
+    }
+
+    @media @mobile {
+        min-width: 400px;
+    }
 }
 
 .about__photo {
     width: 50%;
     
+    @media @tablet {
+        display: flex;
+        height: 400px;
+        width: 250px;
+        margin-top: 3rem;
+    }
+
+    @media @mobile {
+        display: none;
+        
+    }
 }
 
+.about__content {
+    @media @tablet {
+        margin-left: 6rem;
+    }
+
+    @media @mobile {
+        margin-left: 0;
+    }
+}
 
 .about__title {
     font-size: 3rem;
     color: black;
     font-weight: 700;
+
+    @media @tablet {
+        font-size: 1.5rem;
+    }
+
+    @media @mobile {
+        text-align: center;
+    }
 }
 
 .about__bigtitle {
@@ -29,7 +71,16 @@
     line-height: 1.1;
     color: fade(@black, 15%);
     font-weight: 700;
+    
+    @media @tablet {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
 
+    @media @mobile {
+        text-align: center;
+        margin-left: 1.5rem;
+    }
 }
 
 .about__text {
@@ -40,6 +91,10 @@
     line-height: 2;
     color:gray;
     font-weight: 500;
+
+    @media @tablet {
+        font-size: 0.7rem;
+    }
 
 }
     

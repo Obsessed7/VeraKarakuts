@@ -2,16 +2,28 @@
 
 .contact {
     display: flex;
+
+    @media @mobile {
+        max-height: 500px;
+    }
 }
 
 .contact__left {
     width: 47%;
     padding: 2rem;
+    
+    @media @mobile {
+        padding: 1rem;
+    }
 
 }
 
 .contact__right {
     width: 53%;
+
+   @media @mobile {
+    
+   }
 }
 
 .contact__info {
@@ -23,6 +35,10 @@
     font-size: 0.94rem;
     color: black;
     font-weight: 300;
+
+    @media @mobile {
+
+    }
 }
 
 .contact__info-item {
@@ -45,4 +61,8 @@
     text-transform: uppercase;
     font-weight: 400;
 
+    @media @mobile {
+        margin-top: .5rem;
+        font-size: .8rem;
+    }
 }

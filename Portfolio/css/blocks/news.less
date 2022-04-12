@@ -3,6 +3,10 @@
 .news {
     margin-top: 14rem;
     margin-bottom: 8rem;
+
+    @media @mobile {
+        display: none;
+    }
 }
 
 .news__header {
@@ -59,6 +63,13 @@
     top: 0;
     left: 0;
     z-index: 1;
+
+    @media @tablet {
+        height: 45px;
+        width: 45px;
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
 
 }
 
